@@ -1,0 +1,30 @@
+body{
+  background-color:grey;
+}
+
+.topbar{
+  border: 1px solid red;
+  padding:2%;
+  margin: 0 auto;
+  background-color: black;
+  display:flex;
+
+}
+
+.buttons{
+  display:flex;
+  align-items:stretch;
+
+
+
+}
+
+.buttons > div{
+  align-self:center;
+  justify-content: space-around;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
