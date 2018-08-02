@@ -1,14 +1,14 @@
 body{
   background-color:grey;
+  border:2px solid red;
 }
 
 .topbar{
   border: 1px solid red;
-  padding:2%;
-  margin: 0 auto;
+  padding:2px;
   background-color: black;
   display:flex;
-  justify-content:flex-start;
+  justify-content:space-between;
 
 }
 
@@ -29,4 +29,18 @@ body{
 a{
   color:white;
   text-decoration: none;
+}
+
+article{
+  background-color:white;
+  text-align:center;
+  font-size:300%;
+  opacity
+  color:black;
+  font-family:fantasy;
+  background-image:url("../img/d20.png");
+  background-size:500px;
+  background-repeat:no-repeat;
+  background-position: center;
+  opacity:1;
 }
