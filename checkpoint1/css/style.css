@@ -23,7 +23,8 @@ body{
 }
 
 button{
- border:1px solid rgb(229, 30, 37);
+ background-color: #f6f6f6;
+ border:none;
 }
 a{
   color:white;
