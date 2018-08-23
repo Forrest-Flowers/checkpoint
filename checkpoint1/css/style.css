@@ -1,3 +1,4 @@
+@media (min-width 992px){
 body{
   background-color:#f6f6f6;
   border:2px solid rgb(229, 30, 37);
@@ -72,4 +73,161 @@ section{
   height:100%;
   font-family:fantasy;
   border: 2px solid rgb(229, 30 ,37);
+}
+}
+@media (min-width: 768px) {
+  body{
+    background-color:#f6f6f6;
+    border:2px solid rgb(229, 30, 37);
+    font-family:fantasy;
+
+  }
+
+  .topbar{
+    border: 1px solid rgb(229, 30 ,37);
+    padding:2px;
+    background-color:rgb(229, 30 ,37);
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .buttons{
+    display:flex;
+  }
+
+  .buttons > div{
+    align-self:center;
+    padding:5px;
+  }
+
+  button{
+   background-color: #f6f6f6;
+   border:none;
+  }
+  a{
+    color:white;
+    text-decoration: none;
+    font-family:fantasy;
+    font-size:150%;
+  }
+
+  .homepage{
+    display:flex;
+  }
+
+  section{
+    display:flex;
+    flex-direction:column;
+    width:20%;
+    height:auto;
+    color:black;
+    font-size:125%;
+    border: 2px solid rgb(229, 30, 37);
+
+  }
+  .login{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex-wrap:wrap;
+    border: 2px solid rgb(229, 30, 37);
+    padding:5px;
+  }
+  .blog{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    padding:5px;
+  }
+  .adventure{
+    display:flex;
+    justify-content:flex-start;
+    text-align:center;
+    flex-direction: column;
+    font-size:200%;
+    color:black;
+    width:80%;
+    height:100%;
+    font-family:fantasy;
+    border: 2px solid rgb(229, 30 ,37);
+  }
+
+}
+@media (min-width: 576px) {
+  body{
+    background-color:#f6f6f6;
+    border:2px solid rgb(229, 30, 37);
+    font-family:fantasy;
+
+  }
+
+  .topbar{
+    border: 1px solid rgb(229, 30 ,37);
+    padding:2px;
+    background-color:rgb(229, 30 ,37);
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .buttons{
+    display:flex;
+  }
+
+  .buttons > div{
+    align-self:center;
+    padding:5px;
+  }
+
+  button{
+   background-color: #f6f6f6;
+   border:none;
+  }
+  a{
+    color:white;
+    text-decoration: none;
+    font-family:fantasy;
+    font-size:150%;
+  }
+
+  .homepage{
+    display:flex;
+  }
+
+  section{
+    display:flex;
+    flex-direction:column;
+    width:20%;
+    height:auto;
+    color:black;
+    font-size:125%;
+    border: 2px solid rgb(229, 30, 37);
+
+  }
+  .login{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex-wrap:wrap;
+    border: 2px solid rgb(229, 30, 37);
+    padding:5px;
+  }
+  .blog{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    padding:5px;
+  }
+  .adventure{
+    display:flex;
+    justify-content:flex-start;
+    text-align:center;
+    flex-direction: column;
+    font-size:200%;
+    color:black;
+    width:80%;
+    height:100%;
+    font-family:fantasy;
+    border: 2px solid rgb(229, 30 ,37);
+  }
+
 }
