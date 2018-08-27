@@ -1,0 +1,50 @@
+
+body{
+  background-color:#f2f2f2;
+  border:2px solid rgb(229, 30, 37);
+  font-family:fantasy;
+}
+
+  .topbar{
+  background-color:#E51E25;
+  display:grid;
+  grid-template-columns:1fr 1fr 2fr 1fr 1fr;
+  grid-template-rows:repeat(4, 1fr);
+
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-auto-rows:repeat(4, 1fr);
+  background-color:#333
+}
+
+
+.home{
+  grid-area:topleft;
+}
+.schedule{
+  grid-area:top-mleft;
+}
+.forums{
+  grid-area:top-mright;
+}
+.games{
+  grid-area:top-right;
+}
+.announcements{
+  grid-area:announcements
+}
+
+.login{
+  grid-area:login;
+  display:grid;
+  border: 2px solid rgb(229, 30, 37);
+  padding:5px;
+}
+.main{
+  grid-area:main;
+  padding:5px;
+
+} */ */

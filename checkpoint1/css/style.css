@@ -6,12 +6,17 @@ body{
 
 }
 
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
 .topbar{
   border: 1px solid rgb(229, 30 ,37);
   padding:2px;
   background-color:rgb(229, 30 ,37);
-  display:flex;
-  justify-content:space-between;
+
 }
 
 .buttons{
@@ -26,6 +31,11 @@ body{
 button{
  background-color: #f6f6f6;
  border:none;
+}
+
+.adventure > img{
+  height: 200px;
+  width: 200px;
 }
 a{
   color:white;
