@@ -1,50 +1,87 @@
 
 body{
-  background-color:#f2f2f2;
+  background-color:#ffffff;
   border:2px solid rgb(229, 30, 37);
   font-family:fantasy;
+  background-image:url("../img/wood.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#f2f2f2;
 }
 
-  .topbar{
+.navbar{
   background-color:#E51E25;
-  display:grid;
-  grid-template-columns:1fr 1fr 2fr 1fr 1fr;
-  grid-template-rows:repeat(4, 1fr);
-
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.navbar > a{
+  color:white;
+  text-decoration: none;
+  font-size:200%;
+}
+.navbar > img{
+  height:100px;
+  width:100px;
 }
 
 .container{
   display:grid;
-  grid-template-columns: 1fr 1fr 2fr 2fr;
-  grid-auto-rows:repeat(4, 1fr);
-  background-color:#333
+  grid-template-columns:1fr 1fr 1fr;
+  grid-auto-rows:auto;
+  grid-template-areas:
+  "login main announcements"
+  "games main announcements";
+  height:100%;
+  width:100%;
+  border: 1px solid rgb(229, 30, 37);
+}
+.game{
+display:flex;
+flex-direction:column;
+justify-content: space-between;
+grid-area:games;
+padding:10px;
+}
+.game > img{
+  width: auto;
+  height:200px;
 }
 
-
-.home{
-  grid-area:topleft;
-}
-.schedule{
-  grid-area:top-mleft;
-}
-.forums{
-  grid-area:top-mright;
-}
-.games{
-  grid-area:top-right;
-}
 .announcements{
-  grid-area:announcements
+  grid-area:announcements;
+  text-align: center;
+  padding: 10px;
+}
+.announcements > h2{
+  border-bottom:1px solid rgb(229, 30, 37);
 }
 
 .login{
   grid-area:login;
-  display:grid;
-  border: 2px solid rgb(229, 30, 37);
-  padding:5px;
+  border: 1px solid rgb(229, 30, 37);
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.login > input{
+  width:50%;
 }
 .main{
   grid-area:main;
-  padding:5px;
-
-} */ */
+  text-align: center;
+  padding:10px;
+  border-left: 1px solid rgb(229, 30, 37);
+  border-right:1px solid rgb(229, 30, 37);
+}
+.main > h2{
+  border-bottom: 1px solid rgb(229, 30, 37);
+}
+.main > img{
+height:auto;
+width:auto;
+padding:5px;
+}
