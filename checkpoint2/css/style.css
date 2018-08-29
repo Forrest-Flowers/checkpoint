@@ -1,6 +1,7 @@
-
+@media (min-width: 992px) {
+  /*Set font, background color.  */
 body{
-  background-color:#ffffff;
+  background-color:#4d2600;
   border:2px solid rgb(229, 30, 37);
   font-family:fantasy;
   background-image:url("../img/wood.jpg");
@@ -8,7 +9,7 @@ body{
   background-size:cover;
   color:#f2f2f2;
 }
-
+/*Set up our nav  */
 .navbar{
   background-color:#E51E25;
   display:flex;
@@ -17,16 +18,18 @@ body{
   flex-direction: row;
   flex-wrap:wrap;
 }
+/* Styles the links. */
 .navbar > a{
   color:white;
   text-decoration: none;
   font-size:200%;
 }
+/* Makes the icon fit */
 .navbar > img{
   height:100px;
   width:100px;
 }
-
+/*Defines and sets up our grid.  */
 .container{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
@@ -38,6 +41,7 @@ body{
   width:100%;
   border: 1px solid rgb(229, 30, 37);
 }
+/* Structures the Game Icons. */
 .game{
 display:flex;
 flex-direction:column;
@@ -45,20 +49,22 @@ justify-content: space-between;
 grid-area:games;
 padding:10px;
 }
+/*Makes the Images fit. */
 .game > img{
   width: auto;
   height:200px;
 }
-
+/*Styling/Grid Placement  */
 .announcements{
   grid-area:announcements;
   text-align: center;
   padding: 10px;
 }
+/*Aesthetic Border */
 .announcements > h2{
   border-bottom:1px solid rgb(229, 30, 37);
 }
-
+/*Input for login, styling  */
 .login{
   grid-area:login;
   border: 1px solid rgb(229, 30, 37);
@@ -67,9 +73,11 @@ padding:10px;
   justify-content: flex-start;
   align-items: flex-start;
 }
+/*Makes the input boxes easier on the eyes.  */
 .login > input{
   width:50%;
 }
+/*Styling Main section  */
 .main{
   grid-area:main;
   text-align: center;
@@ -77,11 +85,210 @@ padding:10px;
   border-left: 1px solid rgb(229, 30, 37);
   border-right:1px solid rgb(229, 30, 37);
 }
+/*Aesthetic border  */
 .main > h2{
   border-bottom: 1px solid rgb(229, 30, 37);
 }
+/*Character Sheet image in main article*/
 .main > img{
 height:auto;
 width:auto;
 padding:5px;
+}
+}
+
+@media (min-width: 780px){
+  body{
+    background-color:#4d2600;
+    border:2px solid rgb(229, 30, 37);
+    font-family:fantasy;
+    background-image:url("../img/wood.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#f2f2f2;
+  }
+  /*Set up our nav  */
+  .navbar{
+    background-color:#E51E25;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+  /* Styles the links. */
+  .navbar > a{
+    color:white;
+    text-decoration: none;
+    font-size:200%;
+  }
+  /* Makes the icon fit */
+  .navbar > img{
+    height:100px;
+    width:100px;
+  }
+  /*Defines and sets up our grid.  */
+  .container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-auto-rows:auto;
+    grid-template-areas:
+    "login main announcements"
+    "games main announcements";
+    height:100%;
+    width:100%;
+    border: 1px solid rgb(229, 30, 37);
+  }
+  /* Structures the Game Icons. */
+  .game{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  grid-area:games;
+  padding:10px;
+  }
+  /*Makes the Images fit. */
+  .game > img{
+    width: auto;
+    height:200px;
+  }
+  /*Styling/Grid Placement  */
+  .announcements{
+    grid-area:announcements;
+    text-align: center;
+    padding: 10px;
+  }
+  /*Aesthetic Border */
+  .announcements > h2{
+    border-bottom:1px solid rgb(229, 30, 37);
+  }
+  /*Input for login, styling  */
+  .login{
+    grid-area:login;
+    border: 1px solid rgb(229, 30, 37);
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  /*Makes the input boxes easier on the eyes.  */
+  .login > input{
+    width:50%;
+  }
+  /*Styling Main section  */
+  .main{
+    grid-area:main;
+    text-align: center;
+    padding:10px;
+    border-left: 1px solid rgb(229, 30, 37);
+    border-right:1px solid rgb(229, 30, 37);
+  }
+  /*Aesthetic border  */
+  .main > h2{
+    border-bottom: 1px solid rgb(229, 30, 37);
+  }
+  /*Character Sheet image in main article*/
+  .main > img{
+  height:auto;
+  width:auto;
+  padding:5px;
+  }
+}
+
+@media (min-width: 576px){
+  body{
+    background-color:#4d2600;
+    border:2px solid rgb(229, 30, 37);
+    font-family:fantasy;
+    background-image:url("../img/wood.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#f2f2f2;
+  }
+  /*Set up our nav  */
+  .navbar{
+    background-color:#E51E25;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+  /* Styles the links. */
+  .navbar > a{
+    color:white;
+    text-decoration: none;
+    font-size:200%;
+  }
+  /* Makes the icon fit */
+  .navbar > img{
+    height:100px;
+    width:100px;
+  }
+  /*Defines and sets up our grid.  */
+  .container{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "login"
+    "main"
+    "announcements"
+    height:100%;
+    width:100%;
+    border: 1px solid rgb(229, 30, 37);
+  }
+  /* Structures the Game Icons. */
+  .game{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  grid-area:games;
+  padding:10px;
+  }
+  /*Makes the Images fit. */
+  .game > img{
+    width: auto;
+    height:200px;
+  }
+  /*Styling/Grid Placement  */
+  .announcements{
+    grid-area:announcements;
+    text-align: center;
+    padding: 10px;
+  }
+  /*Aesthetic Border */
+  .announcements > h2{
+    border-bottom:1px solid rgb(229, 30, 37);
+  }
+  /*Input for login, styling  */
+  .login{
+    grid-area:login;
+    border: 1px solid rgb(229, 30, 37);
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  /*Makes the input boxes easier on the eyes.  */
+  .login > input{
+    width:50%;
+  }
+  /*Styling Main section  */
+  .main{
+    grid-area:main;
+    text-align: center;
+    padding:10px;
+    border-left: 1px solid rgb(229, 30, 37);
+    border-right:1px solid rgb(229, 30, 37);
+  }
+  /*Aesthetic border  */
+  .main > h2{
+    border-bottom: 1px solid rgb(229, 30, 37);
+  }
+  /*Character Sheet image in main article*/
+  .main > img{
+  height:auto;
+  width:auto;
+  padding:5px;
+  }
 }
