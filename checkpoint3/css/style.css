@@ -1,0 +1,42 @@
+body {
+  background-color: #ffb73d;
+  color: white;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#gecko {
+  width: 300px;
+  height: 250px;
+  background-color: brown;
+  border-radius: 25px;
+}
+
+img {
+  box-shadow: 5px 5px #e0a033;
+}
+
+#currentTotal {
+  width: 150px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 48px;
+  box-shadow: 3px 3px #e0a033;
+}
+
+.button {
+  width: 150px;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 3px 3px #e0a033;
+}
