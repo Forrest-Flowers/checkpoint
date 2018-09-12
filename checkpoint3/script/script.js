@@ -1,28 +1,36 @@
 'use strict'
-$( document ).ready(function() {
-
+// Defines GPS and the the counter
 var data = {
   totalCurrent: 0,
   totalGPS: 0
 };
 
+// Rate at which the current number changes in milliseconds (A tick)
+
 setInterval(accumulate, 1000);
+
+//Adds geckos at a rate determined by GPS
 
 function accumulate() {
   data.totalCurrent += data.totalGPS;
   updateReport();
 }
 
+// Number of gains made per tick
+
 function updateReport() {
   $("#currentTotal").text(Math.floor(data.totalCurrent));
   $("#gps").text((data.totalGPS / 2 ).toFixed(2));
 }
 
+//Gotta click geckos to get geckos
 
 $("#gecko").click(function() {
   data.totalCurrent++;
   updateReport();
 })
+
+//Buy buttons and price raises.
 
 $(".button").click(function() {
   var addVal = $(this).data("cost");
@@ -33,5 +41,4 @@ $(".button").click(function() {
     $(this).data("cost", parseInt($(this).data("cost") * 1.2));
   }
   updateReport();
-});
 });
